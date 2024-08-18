@@ -1,7 +1,13 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
+import NavMenu from "../Shared/NavMenu";
 
 const Root = () => {
-  return <div>home</div>;
+  return (
+    <div>
+      <NavMenu></NavMenu>
+      <Outlet></Outlet>
+    </div>
+  );
 };
 
 export default Root;
